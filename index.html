@@ -1,48 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>My Video Rating</title>
 
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="styles.css" />
+      href="style.css" />
   </head>
+
   <body>
-    <video
-      controls
-      width="320"
-      height="240"
-      muted>
-      <source
-        src="video.mp4"
-        type="video/mp4" />
-    </video>
-
-    <form>
-      <div>
-        <label for="rating">Rating</label>
-        <input
-          type="range"
-          name="rating"
-          id="rating"
-          min="1"
-          max="5"
-          list="ratings" />
-
-        <datalist id="ratings">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option
-            value="5"
-            label="5">
-            5
-          </option>
-        </datalist>
-      </div>
-
-      <button type="submit">Submit Rating</button>
-    </form>
+    <div class="container">
+      <header class="header">Header</header>
+      <main class="main">Content</main>
+      <div class="sidebar left">Sidebar</div>
+      <div class="sidebar right">Sidebar</div>
+      <footer class="footer">Footer</footer>
+    </div>
   </body>
 </html>
