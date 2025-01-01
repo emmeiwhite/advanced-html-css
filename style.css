@@ -66,3 +66,13 @@
 .sidebar:hover {
   background-color: aqua;
 }
+
+/* transform with transition (for smooth effect) */
+.effect-in-practice {
+  transform: translate(0px);
+  transition: transform 1s ease;
+}
+
+.effect-in-practice:hover {
+  transform: translate(50px);
+}
