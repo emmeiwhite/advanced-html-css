@@ -1,6 +1,6 @@
 /* Add code for container class below */
+/*
 .container {
-  /* Add rules here */
   display: grid;
   max-width: 900px;
   min-height: 50vh;
@@ -13,10 +13,9 @@
     'right'
     'footer';
 }
-/* Add media rules for container class below */
+
 @media (min-width: 440px) {
   .container {
-    /* Add rules here */
     grid-template-columns: 150px 1fr 150px;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -25,8 +24,8 @@
       'footer footer footer';
   }
 }
-
-/* Properties for other selectors */
+*/
+/* Properties for other selectors
 .header {
   grid-area: header;
   padding: 10px;
@@ -66,8 +65,10 @@
 .sidebar:hover {
   background-color: aqua;
 }
-
+ */
 /* transform with transition (for smooth effect) */
+
+/* ---
 .effect-in-practice {
   transform: translate(0px);
   transition: transform 1s ease;
@@ -99,13 +100,67 @@
   text-align: center;
 }
 .box:hover p:first-of-type {
-  transform: translate(100px, 200px);
+  transform: translate(100px, 100px);
 }
 
 .box p:last-of-type {
   font-size: 2rem;
   text-align: center;
+  position: relative;
 }
 .box:hover p:last-of-type {
-  transform: translate(-150px, -170px);
+  transform: translate(-100px, -50px);
+}
+
+.heart {
+  font-size: 3rem;
+  position: absolute;
+  top: 32.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  --- */
+
+/* --- Animations at the best ---*/
+* {
+  padding: 0;
+  margin: 0;
+  color: pink;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: bisque;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+.letters > p {
+  text-decoration: center;
+  background-color: rgb(250, 150, 100);
+  width: 70px;
+  margin-right: 1.5px;
+  border-radius: 15%;
+  border-color: rgb(250, 125, 75);
+  border-style: solid;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+/* Add rules for steps 8 and 9 */
+.letters > p:nth-child(even):hover {
+  transform: rotateY(720deg) skew(10deg);
+}
+
+/* Add rules for steps 10 and 11 */
+.letters > p:nth-child(odd):hover {
+  transform: rotateX(720deg) skew(10deg);
 }
