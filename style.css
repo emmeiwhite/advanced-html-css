@@ -76,3 +76,36 @@
 .effect-in-practice:hover {
   transform: translate(50px);
 }
+
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 50px auto;
+  border-radius: 1rem;
+  transition: 2s;
+  border: 2px solid;
+}
+
+.box:hover {
+  transform: rotate(40deg);
+}
+
+.box p {
+  transition: 1s;
+}
+
+.box p:first-of-type {
+  font-size: 2rem;
+  text-align: center;
+}
+.box:hover p:first-of-type {
+  transform: translate(100px, 200px);
+}
+
+.box p:last-of-type {
+  font-size: 2rem;
+  text-align: center;
+}
+.box:hover p:last-of-type {
+  transform: translate(-150px, -170px);
+}
