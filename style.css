@@ -60,4 +60,9 @@
 .sidebar {
   padding: 25px;
   background-color: darkcyan;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar:hover {
+  background-color: aqua;
 }
