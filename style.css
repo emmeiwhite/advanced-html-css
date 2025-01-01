@@ -222,9 +222,16 @@
 
   margin-left: 40px;
 
-  animation: bouncing 3s ease-in-out infinite forwards;
+  /* animation: bouncing 3s ease-in-out infinite forwards; */
+
+  /* 3D Animation */
+  animation: bouncing 2s infinite ease-in-out;
+  animation-direction: alternate;
+
 }
 
+
+/*
 
 @keyframes bouncing {
   0% {
@@ -232,10 +239,22 @@
   }
 
   50% {
-    transform: translateY(-180px); /* Ball moves down */
+    transform: translateY(-180px);
   }
 
   100% {
-    transform: translateY(0); /* Ball comes back up */
+    transform: translateY(0); 
   }
+}
+  */
+
+  @keyframes bouncing {
+ from {
+    transform: translate3d(0,0,0);
+  }
+
+ to {
+    transform: translate3d(-0,180px,0);
+  }
+
 }
