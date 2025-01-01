@@ -186,15 +186,28 @@
 
 .circle .hour {
   background-color: red;
-  width: 4px;
-  height: 80px;
-  top: 20px;
+  width: 6px;
+  height: 70px;
+  top: 30px;
+  animation: setRotation 60s linear infinite;
 }
 
 .circle .minute {
-  background-color: green;
-  width: 3px;
+  background-color: rgb(107, 224, 107);
+  width: 5px;
   height: 90px;
   top: 10px;
-  /* transform: rotateZ(30deg); */
+  transform: rotateZ(30deg);
+  animation: setRotation 6s linear infinite;
+}
+
+/* --- Now time for keyframes for more enhanced animations ---  */
+@keyframes setRotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
