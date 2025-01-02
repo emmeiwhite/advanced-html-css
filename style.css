@@ -258,3 +258,18 @@
   }
 
 }
+
+.play {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(13, 37, 13);
+  border-radius: 50% /* this line and the followed line are not rendered*/
+  border:3px solid orange;
+  transform:rotate(50deg); /* This line is rendered! */
+}
+
+.test {
+  box-sizing: border-box
+}
+
+/* Everyday is day-1 */
